@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<designerData version="1.1.0">
+  <componentManifest>
+    <manifestEntry id="com.nokia.sdt.series60.CAknApplication" version="1.1.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.NonLayoutBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CommonBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CAknDocument" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CAknViewAppUi" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CAknAppUi" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CAknAppUiBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.DesignTimeContainer" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.StatusPane" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.ControlBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.StatusPaneCaption" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.StatusPaneTitleBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CBA" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CBABase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.AvkonViewReference" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.DesignReference" version="1.0.0"/>
+  </componentManifest>
+  <property id="com.nokia.sdt.symbian.dm.RESOURCE_DIRECTORY_ID">data</property>
+  <property id="com.nokia.sdt.component.symbian.version">5.0.0</property>
+  <property id="com.nokia.sdt.component.symbian.vendor">com.nokia.series60</property>
+  <property id="com.nokia.sdt.symbian.dm.COMPONENT_PROVIDER">com.nokia.sdt.component.symbian.Symbian-Provider</property>
+  <property id="com.nokia.sdt.symbian.dm.INCLUDE_DIRECTORY_ID">inc</property>
+  <property id="com.nokia.sdt.symbian.dm.ROOT_CONTAINER">quickLauncherAppUi</property>
+  <property id="com.nokia.sdt.symbian.dm.SOURCE_DIRECTORY_ID">src</property>
+  <property id="com.nokia.sdt.symbian.dm.ROOT_APPLICATION_NAME">quickLauncher</property>
+  <property id="com.nokia.sdt.symbian.dm.SOURCEGEN_PROVIDER">com.nokia.sdt.sourcegen.Symbian-Provider</property>
+  <property id="com.nokia.sdt.symbian.dm.BUILD_DIRECTORY_ID">group</property>
+  <component id="com.nokia.sdt.series60.CAknApplication">
+    <property id="className">CquickLauncherApplication</property>
+    <property id="documentBase">quickLauncher</property>
+    <property id="name">quickLauncherApplication</property>
+    <property id="uid">0x200396A3</property>
+    <component id="com.nokia.sdt.series60.CAknDocument">
+      <property id="className">CquickLauncherDocument</property>
+      <property id="name">quickLauncherDocument</property>
+      <component id="com.nokia.sdt.series60.CAknViewAppUi">
+        <property id="initialDesign" type="componentRef">aknViewReference1</property>
+        <property id="className">CquickLauncherAppUi</property>
+        <compoundProperty id="location">
+          <property id="x">10</property>
+          <property id="y">10</property>
+        </compoundProperty>
+        <property id="name">quickLauncherAppUi</property>
+        <compoundProperty id="size">
+          <property id="width">360</property>
+          <property id="height">640</property>
+        </compoundProperty>
+        <component id="com.nokia.sdt.series60.StatusPane">
+          <compoundProperty id="location">
+            <property id="x">30</property>
+          </compoundProperty>
+          <property id="name">statusPane</property>
+          <compoundProperty id="size">
+            <property id="width">306</property>
+            <property id="height">95</property>
+          </compoundProperty>
+          <component id="com.nokia.sdt.series60.StatusPaneCaption">
+            <property id="shortCaption" type="i18n">STR_quickLauncherApplication_5</property>
+            <compoundProperty id="location"/>
+            <property id="longCaption" type="i18n">STR_quickLauncherApplication_4</property>
+            <property id="name">caption</property>
+            <compoundProperty id="size">
+              <property id="width">222</property>
+              <property id="height">55</property>
+            </compoundProperty>
+          </component>
+        </component>
+        <component id="com.nokia.sdt.series60.CBA">
+          <compoundProperty id="location">
+            <property id="y">584</property>
+          </compoundProperty>
+          <compoundProperty id="info">
+            <property id="leftText" type="i18n">STR_quickLauncherApplication_1</property>
+            <property id="rightText" type="i18n">STR_quickLauncherApplication_2</property>
+            <property id="middleText" type="i18n">STR_quickLauncherApplication_3</property>
+          </compoundProperty>
+          <property id="name">controlPane</property>
+          <compoundProperty id="size">
+            <property id="width">360</property>
+            <property id="height">56</property>
+          </compoundProperty>
+        </component>
+        <component id="com.nokia.sdt.series60.AvkonViewReference">
+          <property id="filePath">Main.uidesign</property>
+          <compoundProperty id="tabImage"/>
+          <property id="baseName">Main</property>
+          <property id="name">aknViewReference1</property>
+        </component>
+      </component>
+    </component>
+  </component>
+  <stringBundle>
+    <stringTable language="LANG_Russian">
+      <string id="STR_quickLauncherApplication_1"/>
+      <string id="STR_quickLauncherApplication_2"/>
+      <string id="STR_quickLauncherApplication_3"/>
+      <string id="STR_quickLauncherApplication_4">quickLauncher</string>
+      <string id="STR_quickLauncherApplication_5">quickLauncher</string>
+    </stringTable>
+    <stringTable language="LANG_English">
+      <string id="STR_quickLauncherApplication_1">??</string>
+      <string id="STR_quickLauncherApplication_2">??</string>
+      <string id="STR_quickLauncherApplication_3">??</string>
+      <string id="STR_quickLauncherApplication_4">??quickLauncher</string>
+      <string id="STR_quickLauncherApplication_5">??quickLauncher</string>
+    </stringTable>
+    <stringTable language="LANG_German">
+      <string id="STR_quickLauncherApplication_1">??</string>
+      <string id="STR_quickLauncherApplication_2">??</string>
+      <string id="STR_quickLauncherApplication_3">??</string>
+      <string id="STR_quickLauncherApplication_4">??quickLauncher</string>
+      <string id="STR_quickLauncherApplication_5">??quickLauncher</string>
+    </stringTable>
+    <stringTable language="LANG_Spanish">
+      <string id="STR_quickLauncherApplication_1">??</string>
+      <string id="STR_quickLauncherApplication_2">??</string>
+      <string id="STR_quickLauncherApplication_3">??</string>
+      <string id="STR_quickLauncherApplication_4">??quickLauncher</string>
+      <string id="STR_quickLauncherApplication_5">??quickLauncher</string>
+    </stringTable>
+  </stringBundle>
+  <macroTable/>
+  <sourceMappingState>
+    <resourceMappings>
+      <resourceMapping instanceName="quickLauncherAppUi">r_application_quick_launcher_app_ui</resourceMapping>
+      <resourceMapping instanceName="statusPane">r_application_status_pane</resourceMapping>
+      <resourceMapping instanceName="aknViewReference1" rsrcId="tabText">r_application_akn_view_reference1</resourceMapping>
+      <resourceMapping instanceName="quickLauncherAppUi" rsrcId="localisable_app_info">r_localisable_app_info</resourceMapping>
+    </resourceMappings>
+    <enumMappings>
+      <enumMapping instanceName="aknViewReference1" propertyId="" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_VIEW_UID">EMainViewId</enumMapping>
+    </enumMappings>
+    <arrayMappings/>
+  </sourceMappingState>
+  <generatedFiles>
+    <file>inc/mainview.h</file>
+    <file>inc/quicklauncherappui.h</file>
+    <file>src/quicklauncherappui.cpp</file>
+    <file>inc/quicklauncherdocument.h</file>
+    <file>inc/quicklauncherapplication.h</file>
+    <file>src/mainview.cpp</file>
+    <file>src/quicklauncherapplication.cpp</file>
+    <file>src/quicklauncherdocument.cpp</file>
+    <file>data/quicklauncher.rss</file>
+    <file>inc/quicklauncher.hrh</file>
+    <file>data/main.rssi</file>
+    <file>inc/main.hrh</file>
+    <file>data/quicklauncher.loc</file>
+    <file>data/quicklauncher.l16</file>
+    <file>data/main.loc</file>
+    <file>data/main.l16</file>
+    <file>data/quicklauncher.l01</file>
+    <file>data/quicklauncher.l03</file>
+    <file>data/quicklauncher.l04</file>
+  </generatedFiles>
+</designerData>

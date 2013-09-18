@@ -1,0 +1,52 @@
+/*========================================================================
+ Name       : Main.l01
+ Author     : Usanov-Kornilov Nikolay (aka Kolay)
+ Copyright  : 
+ Contacts	: kolayuk@mail.ru | http://kolaysoft.ru
+(c) KolaySoft, 2011
+ Description : 
+========================================================================*/
+// localized strings for language: UK English (01)
+CHARACTER_SET UTF8
+
+#define STR_MainView_4 		"quickLaunch" // переводить не нужно
+
+#define STR_MainView_1 		"Options"
+#define STR_MainView_2 		"Hide"
+#define STR_MainView_12 	"Exit"
+
+#define STR_AppExists		"Application's already in the list!"
+#define STR_NoApps 			"quickLauch: Applications are not selected!"
+
+#define STR_MainView_17 	"Show app's panel"
+#define STR_MainView_13 	"Autostart"
+#define STR_On 				"yes"
+#define STR_Off				"no"
+
+#define STR_MainView_25 	"Application 1"
+#define STR_MainView_29 	"Application 2"
+#define STR_MainView_33 	"Application 3"
+#define STR_MainView_37 	"Application 4"
+#define STR_MainView_40 	"Application 5"
+#define STR_MainView_26 	"<not selected>"
+
+#define STR_MainView_21 	"Panel location"
+#define STR_Left			"left side"
+#define STR_Right			"right side"
+#define STR_Up				"up side"
+#define STR_Down			"down side"
+#define STR_Exceptions		"Exceptions"
+#define STR_Exceptions2		"to disable sensor"
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//этот блок переводить не нужно
+#define qtn_about_menu 							"About"
+#define qtn_menu_goto_ovi						"Other products"
+#define qtn_gotobuy_dlgmsg						"Now the page with our products in Ovi Store shop will be opened in the browser."
+#define qtn_cancel								"Cancel"
+#define qtn_continue							"Continue"
+#define qtn_copyright_information				"(c) 2011"
+#define qtn_support_information					"Send all your questions and wishes to:"
+#define qtn_email_information					"support@symdeveloper.ru"
+#define qtn_publisher_information				"Published by Alexander Fokin"
+#define qtn_autor_information					"Developed by Usanov-Kornilov Nikolay"
+

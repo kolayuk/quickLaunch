@@ -1,0 +1,380 @@
+/*
+========================================================================
+ Name        : Main.rssi
+ Author      : Usanov-Kornilov Nikolay (aka Kolay)
+ Copyright   : 
+Contacts:
+	kolayuk@mail.ru
+	http://kolaysoft.ru
+
+(c) KolaySoft, 2011
+
+ Description : 
+========================================================================
+*/
+#include "Main.hrh"
+#include "Main.loc"
+
+RESOURCE AVKON_VIEW r_main_main_view
+	{
+	cba = r_main_control_pane;
+	menubar = r_main_options_menu;
+	toolbar = 0;
+	}
+RESOURCE MENU_BAR r_main_options_menu
+	{titles =
+			{
+			MENU_TITLE
+				{
+				menu_pane = r_main_menu_pane1_menu_pane;
+				}
+			};
+
+	}
+RESOURCE STATUS_PANE_APP_MODEL r_main_status_pane
+	{
+	panes =
+		{
+		SPANE_PANE
+			{
+			id = EEikStatusPaneUidTitle;
+			type = EAknCtTitlePane;
+			resource = r_main_title_resource;
+			}
+		};
+	}
+RESOURCE TITLE_PANE r_main_title_resource
+	{
+	txt = STR_MainView_4;
+	}
+RESOURCE LISTBOX r_main_list_box
+	{
+	flags = EAknListBoxSelectionList;
+	}
+RESOURCE CBA r_main_control_pane
+	{
+	buttons =
+		{
+		CBA_BUTTON
+			{
+			id = EAknSoftkeyOptions;
+			txt = STR_MainView_1;
+			},
+		CBA_BUTTON
+			{
+			id = EAknSoftkeyExit;
+			txt = STR_MainView_2;
+			},
+		CBA_BUTTON
+			{
+			id = EAknSoftkeyEmpty;
+			txt ="";
+			}
+		};
+	}
+RESOURCE MENU_PANE r_main_menu_pane1_menu_pane
+	{
+	items =
+		{
+		MENU_ITEM
+			{
+			txt=STR_Exceptions;
+			command=EMainViewExceptions;
+			},
+		MENU_ITEM
+			{
+			command = EMainView_MenuItem1Command;
+			txt =qtn_about_menu;
+			},
+		MENU_ITEM
+			{
+			command = EMainView_MenuItem2Command;
+			txt = qtn_menu_goto_ovi;
+			},
+		MENU_ITEM
+			{
+			command = EMainView_MenuItem3Command;
+			txt = STR_MainView_12;
+			}
+		};
+	}
+RESOURCE ARRAY r_main_listbox_item2
+	{
+	items =
+		{
+		LBUF
+			{
+			txt = STR_MainView_17;
+			},
+		LBUF
+			{
+			txt = "";
+			}
+		};
+	}
+RESOURCE ARRAY r_main_listbox_item1
+	{
+	items =
+		{
+		LBUF
+			{
+			txt = STR_MainView_13;
+			},
+		LBUF
+			{
+			txt = "";
+			}
+		};
+	}
+RESOURCE ARRAY r_main_listbox_item3
+	{
+	items =
+		{
+		LBUF
+			{
+			txt = STR_MainView_21;
+			},
+		LBUF
+			{
+			txt = "";
+			}
+		};
+	}
+RESOURCE ARRAY r_main_listbox_item4
+	{
+	items =
+		{
+		LBUF
+			{
+			txt = STR_MainView_25;
+			},
+		LBUF
+			{
+			txt = STR_MainView_26;
+			}
+		};
+	}
+RESOURCE ARRAY r_main_listbox_item5
+	{
+	items =
+		{
+		LBUF
+			{
+			txt = STR_MainView_29;
+			},
+		LBUF
+			{
+			txt = STR_MainView_26;
+			}
+		};
+	}
+RESOURCE ARRAY r_main_listbox_item6
+	{
+	items =
+		{
+		LBUF
+			{
+			txt = STR_MainView_33;
+			},
+		LBUF
+			{
+			txt = STR_MainView_26;
+			}
+		};
+	}
+RESOURCE ARRAY r_main_listbox_item7
+	{
+	items =
+		{
+		LBUF
+			{
+			txt = STR_MainView_37;
+			},
+		LBUF
+			{
+			txt = STR_MainView_26;
+			}
+		};
+	}
+RESOURCE ARRAY r_main_listbox_item8
+	{
+	items =
+		{
+		LBUF
+			{
+			txt = STR_MainView_40;
+			},
+		LBUF
+			{
+			txt = STR_MainView_26;
+			}
+		};
+	}
+
+
+RESOURCE ARRAY r_yes_no
+	{
+	items =
+		{
+		LBUF {txt = STR_Off;},
+		LBUF {txt = STR_On;}
+		};
+	}
+
+RESOURCE ARRAY r_left_right
+	{
+	items =
+		{
+		LBUF {txt = STR_Left;},
+		LBUF {txt = STR_Right;},
+		LBUF {txt = STR_Up;},
+		LBUF {txt = STR_Down;}
+		};
+	}
+RESOURCE TBUF r_app_not_selected
+	{buf=STR_MainView_26;}
+				
+	RESOURCE DIALOG r_app_selector
+{
+	flags = EAknDialogSelectionList;
+	buttons = R_AVKON_SOFTKEYS_OK_CANCEL;
+	items =
+	{
+		DLG_LINE
+		{
+		  type = EAknCtSingleListBox;
+		  id = ESelectionListControl;
+		  control = LISTBOX
+		  {
+		  flags = EAknListBoxSelectionList;
+		  };
+		}, 
+		DLG_LINE 
+		{
+		  itemflags = EEikDlgItemNonFocusing;
+		  id = EFindControl;
+		  type = EAknCtSelectionListFixedFind; 
+		}
+	};
+}
+RESOURCE TBUF r_app_exists
+	{buf=STR_AppExists;}
+				RESOURCE TBUF r_no_apps
+	{buf=STR_NoApps;}
+				
+	RESOURCE AVKON_BUTTON r_empty_button
+{
+flags  = KAknButtonNoFrame|KAknButtonReportOnLongPress;
+states =
+        {
+                AVKON_BUTTON_STATE
+                    {
+                    txt="";
+                    }  
+        };
+}	
+	
+	
+	RESOURCE AVKON_MULTISELECTION_LIST_QUERY r_sisxui_options_query
+	    {
+	    flags = EGeneralQueryFlags;
+	    softkeys = R_AVKON_SOFTKEYS_OK_CANCEL__MARK;
+
+	    items =
+	        {
+	        AVKON_MULTISELECTION_LIST_QUERY_DLG_LINE 
+	            {
+	            control = AVKON_LIST_QUERY_CONTROL
+	                {
+	                listtype = EAknCtSingleGraphicPopupMenuListBox;
+					//listtype =  EAknCtSingleGraphicListBox;
+	                listbox = AVKON_MULTISELECTION_LIST_QUERY_LIST
+	                    {
+	                    array_id = r_sisxui_empty_array;
+	                    };
+	                heading = STR_Exceptions;
+	                };
+	            }
+	        };
+	    }
+RESOURCE ARRAY r_sisxui_empty_array
+	    {
+	    items=
+	        {
+	        LBUF { txt=""; }
+	        };
+	    }
+	
+//OVI
+	STRUCT ABOUTCONTROL
+	{
+	LTEXT txt;
+	}
+	RESOURCE DIALOG r_about_dialog
+	    {
+	    flags = EAknDialogGenericFullScreen;
+	    buttons = R_AVKON_SOFTKEYS_OK_EMPTY;
+	    items =
+	        {
+	        DLG_LINE
+	            {
+	            type = KAknCtLastControlId;
+	            id = KMyCustomCtlId;
+	            control = ABOUTCONTROL
+	            			{
+	            			txt="";
+	            			};
+	            }
+	        };
+	    }
+			
+	
+	RESOURCE AVKON_VIEW r_about_view
+	{
+		cba = R_AVKON_SOFTKEYS_OK_EMPTY;
+	}
+	RESOURCE DIALOG r_continue_cancel_query
+	{
+		flags = EGeneralQueryFlags;
+		buttons = r_continue_cancel_buttons;
+		items =
+		{
+			DLG_LINE
+			{
+				type = EAknCtQuery;
+				id = EGeneralQuery;
+				control = AVKON_CONFIRMATION_QUERY
+				{
+					layout = EConfirmationQueryLayout;
+					animation = R_QGN_NOTE_INFO_ANIM;
+				};
+			}
+		};
+	}
+RESOURCE CBA r_continue_cancel_buttons
+	{
+		buttons =
+		{
+			CBA_BUTTON
+			{
+				id = EAknSoftkeyOk;
+				txt = qtn_continue;
+			}
+			,
+			CBA_BUTTON
+			{
+				id = EAknSoftkeyCancel;
+				txt = qtn_cancel;
+			}
+		};
+	}
+
+
+RESOURCE TBUF R_PROGRAM_NAME						{buf = "quickLaunch v.%d.%d"; }
+RESOURCE TBUF R_PUBLISHER_INFORMATION				{buf = qtn_publisher_information;}
+RESOURCE TBUF R_AUTOR_INFORMATION					{buf = qtn_autor_information;}
+RESOURCE TBUF R_COPYRIGHT_INFORMATION				{buf = qtn_copyright_information;}
+RESOURCE TBUF R_SUPPORT_INFORMATION					{buf = qtn_support_information;}
+RESOURCE TBUF R_EMAIL_INFORMATION					{buf = qtn_email_information;}	
+RESOURCE TBUF R_BUF_GOTOBUY_DLGMSG					{buf = qtn_gotobuy_dlgmsg;}
+

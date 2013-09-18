@@ -1,0 +1,20 @@
+/*
+========================================================================
+ Name        : quickLauncher.l01
+ Author      : Usanov-Kornilov Nikolay (aka Kolay)
+ Copyright   : 
+Contacts:
+	kolayuk@mail.ru
+	http://kolaysoft.ru
+
+(c) KolaySoft, 2011
+
+ Description : 
+========================================================================
+*/
+// localized strings for language: UK English (01)
+#define STR_quickLauncherApplication_2 ""
+#define STR_quickLauncherApplication_3 ""
+#define STR_quickLauncherApplication_4 "quickLaunch"
+#define STR_quickLauncherApplication_5 "quickLaunch"
+#define STR_quickLauncherApplication_1 ""

@@ -1,0 +1,26 @@
+/*
+========================================================================
+ Name        : quickLauncher.loc
+ Author      : Usanov-Kornilov Nikolay (aka Kolay)
+ Copyright   : 
+Contacts:
+	kolayuk@mail.ru
+	http://kolaysoft.ru
+
+(c) KolaySoft, 2011
+
+ Description : 
+========================================================================
+*/
+#ifdef LANGUAGE_16
+#include "quickLauncher.l16"
+#endif
+#ifdef LANGUAGE_01
+#include "quickLauncher.l01"
+#endif
+#ifdef LANGUAGE_03
+#include "quickLauncher.l03"
+#endif
+#ifdef LANGUAGE_04
+#include "quickLauncher.l04"
+#endif

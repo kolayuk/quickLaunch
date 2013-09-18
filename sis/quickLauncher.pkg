@@ -1,0 +1,48 @@
+; quickLauncher.pkg
+; This is an auto-generated PKG file by Carbide.
+; This file uses variables specific to Carbide builds that will not work
+; on command-line builds. If you want to use this generated PKG file from the
+; command-line tools you will need to modify the variables with the appropriate
+; values: $(EPOCROOT), $(PLATFORM), $(TARGET)
+; Also, the resource file entries should be changed to match the language
+; used in the build. For example, if building for LANGUAGE_01, change the file
+; extensions .rsc to .r01.
+;
+;Language - standard language definitions
+&EN
+
+; standard SIS file header
+#{"quickLaunch"},(0x200396A3),1,5,0
+
+;Localised Vendor name
+%{"Alexander Fokin"}
+
+;Unique Vendor name
+:"Alexander Fokin"
+
+;Supports Series 60 v 5
+[0x1028315F], 0, 0, 0, {"S60 5th"}
+;Supports Symbian S^3
+[0x20022E6D], 0, 0, 0, {"S60 S^3"}
+
+;Files to install
+;You should change the source paths to match that of your environment
+;<source> <destination>
+"$(EPOCROOT)Epoc32\release\$(PLATFORM)\$(TARGET)\quickLauncher.exe"		-"!:\sys\bin\quickLauncher.exe"
+"$(EPOCROOT)epoc32\data\200396A3.r16" 									-"c:\private\101f875a\import\[200396A3].rsc"
+"backup_registration.xml"												-"!:\private\200396A3\backup_registration.xml" 
+"$(EPOCROOT)epoc32\data\z\resource\apps\quickLauncher_aif.mif" 			-"!:\resource\apps\quickLauncher_aif.mif"
+"empty"																	-"C:\system\apps\quickLaunch\firststart"
+
+"$(EPOCROOT)Epoc32\data\z\resource\apps\quickLauncher.r01"				-"!:\resource\apps\quickLauncher.r01"
+"$(EPOCROOT)Epoc32\data\z\private\10003a3f\apps\quickLauncher_reg.r01"	-"!:\private\10003a3f\import\apps\quickLauncher_reg.r01"
+
+;"$(EPOCROOT)Epoc32\data\z\resource\apps\quickLauncher.r03"				-"!:\resource\apps\quickLauncher.r03"
+;"$(EPOCROOT)Epoc32\data\z\private\10003a3f\apps\quickLauncher_reg.r03"	-"!:\private\10003a3f\import\apps\quickLauncher_reg.r03"
+
+;"$(EPOCROOT)Epoc32\data\z\resource\apps\quickLauncher.r04"				-"!:\resource\apps\quickLauncher.r04"
+;"$(EPOCROOT)Epoc32\data\z\private\10003a3f\apps\quickLauncher_reg.r04"	-"!:\private\10003a3f\import\apps\quickLauncher_reg.r04"
+
+"$(EPOCROOT)Epoc32\data\z\resource\apps\quickLauncher.r16"				-"!:\resource\apps\quickLauncher.r16"
+"$(EPOCROOT)Epoc32\data\z\private\10003a3f\apps\quickLauncher_reg.r16"	-"!:\private\10003a3f\import\apps\quickLauncher_reg.r16"
+

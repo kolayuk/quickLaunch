@@ -1,0 +1,25 @@
+/*
+========================================================================
+ Name        : Main.hrh
+ Author      : Usanov-Kornilov Nikolay (aka Kolay)
+ Copyright   : 
+Contacts:
+	kolayuk@mail.ru
+	http://kolaysoft.ru
+
+(c) KolaySoft, 2011
+
+ Description : 
+========================================================================
+*/
+enum TMainViewCommands
+	{
+	EMainViewControlPaneRightId = 0x6000,
+	EMainViewExceptions,
+	EMainView_MenuItemCommand,
+	EMainView_MenuItem1Command,
+	EMainView_MenuItem2Command,
+	EMainView_MenuItem3Command
+	};
+enum {KMyCustomCtl = KAknCtLastControlId };
+enum {KMyCustomCtlId = 0x503 };

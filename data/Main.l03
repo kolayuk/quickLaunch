@@ -1,0 +1,57 @@
+/*========================================================================
+ Name       : Main.l16
+ Author     : Usanov-Kornilov Nikolay (aka Kolay)
+ Copyright  : 
+ Contacts	: kolayuk@mail.ru | http://kolaysoft.ru
+(c) KolaySoft, 2011
+ Description : 
+========================================================================*/
+// localized strings for language: Russian (16)
+CHARACTER_SET UTF8
+
+#define STR_MainView_4 		"quickLaunch" // переводить не нужно
+
+#define STR_MainView_1 		"Меню"
+#define STR_MainView_2 		"Свернуть"
+#define STR_MainView_12 	"Выход"
+
+#define STR_AppExists 		"Приложение уже в этом списке!"
+#define STR_NoApps 			"quickLauch: Приложения не выбраны!"
+
+#define STR_MainView_17 	"Показывать панель"
+#define STR_MainView_13 	"Автозапуск"
+#define STR_On				"да"
+#define STR_Off				"нет"
+
+#define STR_MainView_25 	"Приложение 1"
+#define STR_MainView_29 	"Приложение 2"
+#define STR_MainView_33 	"Приложение 3"
+#define STR_MainView_37 	"Приложение 4"
+#define STR_MainView_40 	"Приложение 5"
+#define STR_MainView_26 	"<не выбрано>"
+
+#define STR_MainView_21 	"Положение панели"
+#define STR_Left 			"Слева"
+#define STR_Right 			"Справа"
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//этот блок переводить не нужно
+#define qtn_about_menu 							"О программе"
+#define qtn_menu_goto_ovi 						"Другие продукты"
+#define qtn_gotobuy_dlgmsg 						"Сейчас в браузере откроется страница с нашими продуктами в магазине Ovi Store"
+#define qtn_cancel 								"Отмена"
+#define qtn_continue 							"Продолжить"
+#define qtn_copyright_information 				"(c) 2011"
+#define qtn_support_information 				"Все ваши вопросы и пожелания отправляйте по адресу:"
+#define qtn_email_information 					"support@symdeveloper.ru"
+#define qtn_publisher_information 				"Издатель: Александр Фокин"
+#define qtn_autor_information 					"Разработчик: Усанов-Корнилов Николай\"#define STR_MainView_3 \"??"
+#define STR_MainView_22 "??"
+#define STR_MainView_10 "??О программе"
+#define STR_MainView_41 "??<Не выбрано>"
+#define STR_MainView_11 "??Другие продукты"
+#define STR_MainView_14 "??"
+#define STR_MainView_18 "??"
+#define STR_MainView_30 "??<Не выбрано>"
+#define STR_MainView_34 "??<Не выбрано>"
+#define STR_MainView_38 "??<Не выбрано>"
+#define STR_MainView_3 "??"
